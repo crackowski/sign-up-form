@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "Norse Bold";
+    src: url(fonts/Norsebold.woff);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+:root {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background: url(images/background.jpg);
+    background-position: 50% 70%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+h1 {
+    font-family: "Norse Bold";
+}
+main {
+    height: 100%;
+    display: flex;
+}
+
+.left {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right {
+    width: 66%;
+    height: 100%;
+}
+
+.odin-section {
+    width: 100%;
+    padding: 20px;
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    background-color: hsl(0, 0%, 0%, 0.6);
+}
+
+.odin-logo {
+    width: 100px;
+}
+.main-heading{
+    align-self: center;
+    font-size: 100px;
+    color: white;
+}
+.credit {
+    text-align: center;
+}
+.credit p,
+.credit a {
+    color: white;
+}
+
+.right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-container {
+    width: 100%;
+    flex-grow: 1;
+    background-color: white;
+    padding: 40px;
+}
+.last,
+.para-container {
+    padding: 40px;
+    flex-grow: 1.2;
+    width: 100%;
+    background-color: #F9FAFB;
+}
+
+.para-container {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: flex-end;
+}
