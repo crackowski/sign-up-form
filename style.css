@@ -13,7 +13,7 @@
 }
 body {
     background: url(images/background.jpg);
-    background-position: 50% 70%;
+    background-position: 0% 70%;
     background-repeat: no-repeat;
     height: 100vh;
 }
@@ -72,9 +72,13 @@ main {
 
 .form-container {
     width: 100%;
-    flex-grow: 1;
+    height: 33vh;
     background-color: white;
     padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* box-shadow: 10px 5px 5px red; */
 }
 .last,
 .para-container {
@@ -89,4 +93,57 @@ main {
     font-weight: 700;
     display: flex;
     align-items: flex-end;
+}
+.para-container p {
+    width: 70%;
+}
+.input-container {
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.input-container div {
+    flex-basis: 100px;
+}
+input {
+    width: 300px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #E5E7EB;
+    margin-right: 40px;
+    border-radius: 6px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+input:focus {
+    border: 1px solid blue;
+}
+input:invalid {
+    border: 1px solid red;
+}
+label {
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+h2 {
+    font-size: 30px;
+}
+.last button {
+    font-size: 25px;
+    padding: 12px 50px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 700;
+    background-color: #596D48;
+    color: white;
+}
+.last p {
+    margin-top: 40px;
+    font-size: 20px;
+}
+.last a {
+    color: #596D48;
+    font-weight: 700;
+    text-decoration: none;
 }
